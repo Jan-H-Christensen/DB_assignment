@@ -39,6 +39,8 @@ This is a short instruction how to setup a small e-commerce db in microsoft sql 
 ## Rollback Plan
 
 For the rollback you have to follow this steps based on how fra you want to rollback,
-run this sql command from this [script]() you SQL Server Management
+run this sql command from this [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) you SQL Server Management
 
-1.
+- if you want to remove the table ProductRatings than run only the first (remember to remove the lines 7 - 9)
+- if you want to remove the category in the product tbl than you have to remove the lines 4 & 5
+- if you want to make a fully rollback than you can run the whole script
