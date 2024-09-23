@@ -21,7 +21,8 @@ This guide demonstrates how to set up a simple e-commerce database in SQL Server
 
 ## **Add Product Categories**
 
-1. create a new query
+1. **Create a New Query:**
+   - Create a new query window within SSMS.
 2. and paste the contents of the script [add_categorie_db.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-categorie/add_categorie_db.sql) file
 3. for now your db diagram should look like this
 
