@@ -19,3 +19,19 @@ CREATE TABLE products
     price DECIMAL(10,2) NOT NULL
 );
 GO
+
+INSERT INTO products(name, price) VALUES
+('Widget', 10.00),
+('Gadget', 20.00),
+('Doohickey', 30.00),
+('Trinket', 40.00),
+('Cupcake', 50.00),
+('Cup', 60.00),
+('Candy', 70.00),
+('Chips', 80.00),
+('Pretzels', 90.00),
+('Crisps', 100.00),
+('Cereal', 110.00),
+('Popcorn', 120.00),
+('Coke', 130.00);
+GO
