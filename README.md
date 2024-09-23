@@ -4,7 +4,7 @@
 
 ## [Add Product Categories](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-categorie/add_categorie_db.sql)
 
-## Implement Product Ratings
+## [Implement Product Ratings](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-ratings/add_tlb_ProductRating.sql)
 
 ## Merge and Conflict Resolution
 
