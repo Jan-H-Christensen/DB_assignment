@@ -6,6 +6,8 @@
 
 ## [Implement Product Ratings](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-ratings/add_tlb_ProductRating.sql)
 
+(https://github.com/Jan-H-Christensen/DB_assignment/blob/main/adding%20new%20tbl.png)
+
 ## Merge and Conflict Resolution
 
 ## Rollback Plan
