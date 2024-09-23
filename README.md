@@ -12,6 +12,7 @@ This is a short instruction how to setup a small e-commerce db in microsoft sql 
 
 1. open a new query
 2. then run the script [add_categorie_db.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-categorie/add_categorie_db.sql) file
+3. for now your db diagram should look like this
 
 ![Image of the created tbl category](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/adding%20category%20tbl.png)
 
