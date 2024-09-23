@@ -5,12 +5,12 @@ This is a short instruction how to setup a small e-commerce db in microsoft sql 
 ## Initial Schema Setup
 
 1. open you sql server management
-2. open a new query
+2. create a new query
 3. then run the script [e_commerce_setup.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/initial-schema/e_commerce_setup.sql) file
 
 ## Add Product Categories
 
-1. open a new query
+1. create a new query
 2. then run the script [add_categorie_db.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-categorie/add_categorie_db.sql) file
 3. for now your db diagram should look like this
 
@@ -18,7 +18,7 @@ This is a short instruction how to setup a small e-commerce db in microsoft sql 
 
 ## Implement Product Ratings
 
-1. open a new query
+1. create a new query
 2. then run the script [add_tbl_ProductRating.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-ratings/add_tlb_ProductRating.sql) file
 3. in the end your db diagram should look like this
 
@@ -44,6 +44,6 @@ This is a short instruction how to setup a small e-commerce db in microsoft sql 
 For the rollback you have to follow this steps based on how fra you want to rollback,
 run this sql command from this [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) you SQL Server Management
 
-- if you want to remove the table ProductRatings than run only the first (remember to remove the lines 13 & 14)
-- if you want to remove the category in the product tbl than you have to remove the lines 5 - 11
+- if you want to remove the table ProductRatings than run only the first (remember to remove the lines 4-11)
+- if you want to remove the category in the product tbl than you have to remove the lines 13 & 14
 - if you want to make a fully rollback than you can run the whole script
