@@ -12,12 +12,15 @@
 
 1. make sure your in the main branch by typ git checkout main
 2. then you can start merging the branches into the mein by
-   2.1 git merge manual/initial-schema
-   2.2 git merge manual/add-categorie
-   2.3 git merge manual/add-ratings
+   - git merge manual/initial-schema
+   - git merge manual/add-categorie
+   - git merge manual/add-ratings
 3. at the end your source control graph should look like that
+
    ![Image source control graph](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/SCG.png)
+
    and the main branch should look like this
+
    ![Image main branch](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/main_branch.png)
 
 ## Rollback Plan
