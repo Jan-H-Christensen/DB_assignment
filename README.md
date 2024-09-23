@@ -1,33 +1,42 @@
-# Manual Database Migration
+# **Manual Database Migration**
 
-This is a short instruction how to setup a small e-commerce db in microsoft sql server management by using a script
+## **Setting Up an E-Commerce Database in SQL Server Management Studio**
 
-## Initial Schema Setup
+This guide demonstrates how to set up a simple e-commerce database in SQL Server Management Studio (SSMS) using scripts.
 
-1. open you sql server management
-2. create a new query
-3. then run the script [e_commerce_setup.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/initial-schema/e_commerce_setup.sql) file
+## **Prerequisites**
 
-## Add Product Categories
+- Microsoft SQL Server Management Studio installed.
+- Basic understanding of SQL.
+
+## **Initial Schema Setup**
+
+1. **Open SSMS:** Launch SQL Server Management Studio.
+2. **create a New Query:** Connect to your desired database server and create a new query window.
+3. **Initial Schema Setup:**
+   - and paste the contents of the script [e_commerce_setup.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/initial-schema/e_commerce_setup.sql) file into the query window.
+   - Execute the script by clicking the "Run" button (or pressing F5). This script creates the initial tables for your e-commerce database
+
+## **Add Product Categories**
 
 1. create a new query
-2. then run the script [add_categorie_db.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-categorie/add_categorie_db.sql) file
+2. and paste the contents of the script [add_categorie_db.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-categorie/add_categorie_db.sql) file
 3. for now your db diagram should look like this
 
 ![Image of the created tbl category](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/adding%20category%20tbl.png)
 
-## Implement Product Ratings
+## **Implement Product Ratings**
 
 1. create a new query
-2. then run the script [add_tbl_ProductRating.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-ratings/add_tlb_ProductRating.sql) file
+2. and paste the contents of the script [add_tbl_ProductRating.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/add-ratings/add_tlb_ProductRating.sql) file
 3. in the end your db diagram should look like this
 
 ![Image of the created tbl](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/adding%20product%20tbl.png)
 
-## Merge and Conflict Resolution
+## **Merge and Conflict Resolution**
 
-1. make sure your in the main branch by typ git checkout main
-2. then you can start merging the branches into the mein by
+1. make sure you are in the main branch by typ git checkout main
+2. then you can start merging the branches into the main by
    - git merge manual/initial-schema
    - git merge manual/add-categorie
    - git merge manual/add-ratings
@@ -35,13 +44,13 @@ This is a short instruction how to setup a small e-commerce db in microsoft sql 
 
    ![Image source control graph](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/SCG.png)
 
-   and the main branch should look like this
+   and the main branch could look like this
 
    ![Image main branch](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/main_branch.png)
 
-## Rollback Plan
+## **Rollback Plan**
 
-For the rollback you have to follow this steps based on how fra you want to rollback,
+For the rollback you have to follow these steps based on how fra you want to rollback,
 run this sql command from this [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) you SQL Server Management
 
 - if you want to remove the table ProductRatings than run only the first (remember to remove the lines 4-11)
