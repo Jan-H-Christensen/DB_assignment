@@ -11,8 +11,10 @@ This guide demonstrates how to set up a simple e-commerce database in SQL Server
 
 ## **Initial Schema Setup**
 
-1. **Open SSMS:** Launch SQL Server Management Studio.
-2. **create a New Query:** Connect to your desired database server and create a new query window.
+1. **Open SSMS:**
+   - Launch SQL Server Management Studio.
+2. **create a New Query:**
+   - Connect to your desired database server and create a new query window.
 3. **Initial Schema Setup:**
    - and paste the contents of the script [e_commerce_setup.sql](https://github.com/Jan-H-Christensen/DB_assignment/blob/manual/initial-schema/e_commerce_setup.sql) file into the query window.
    - Execute the script by clicking the "Run" button (or pressing F5). This script creates the initial tables for your e-commerce database
