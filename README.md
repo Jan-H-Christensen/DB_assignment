@@ -38,4 +38,7 @@ This is a short instruction how to setup a small e-commerce db in microsoft sql 
 
 ## Rollback Plan
 
+For the rollback you have to follow this steps based on how fra you want to rollback,
+run this sql command from this [script]() you SQL Server Management
+
 1.
