@@ -105,5 +105,5 @@ git merge manual/add-ratings
 
 3. **Important Note:**
 
-Always back up your database before making any changes. This rollback script is provided for illustration purposes,
-and you might need to adjust it based on your specific setup.
+   Always back up your database before making any changes. This rollback script is provided for illustration purposes,
+   and you might need to adjust it based on your specific setup.
