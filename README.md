@@ -71,6 +71,30 @@ git merge manual/add-ratings
 For the rollback you have to follow these steps based on how fra you want to rollback,
 run this sql command from this [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) you SQL Server Management
 
-- if you want to remove the table ProductRatings than run only the first (remember to remove the lines 4-11)
+- if you want to remove the table ProductRatings than run only this code
+
+```
+USE e_commerce;
+GO
+
+-- removes the column categories from products
+ALTER TABLE products
+DROP CONSTRAINT fk_categoriesId;
+
+ALTER TABLE products
+DROP COLUMN categoriesId;
+
+DROP TABLE category;
+```
+
 - if you want to remove the category in the product tbl than you have to remove the lines 13 & 14
-- if you want to make a fully rollback than you can run the whole script
+
+```
+USE e_commerce;
+GO
+
+-- removes the table productRatings
+DROP TABLE productRatings;
+```
+
+- if you want to make a fully rollback than you can run the whole script [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) you SQL Server Management
