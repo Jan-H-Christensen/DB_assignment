@@ -48,7 +48,13 @@ This guide demonstrates how to set up a simple e-commerce database in SQL Server
 
 ```
 git merge manual/initial-schema
+```
+
+```
 git merge manual/add-categorie
+```
+
+```
 git merge manual/add-ratings
 ```
 
