@@ -81,7 +81,7 @@ GO
 DROP TABLE productRatings;
 ```
 
-- if you want to remove the category in the product tbl than you have to remove the lines 13 & 14
+- if you want to remove the category tbl than you can run this code snipped
 
 ```
 USE e_commerce;
