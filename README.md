@@ -45,9 +45,13 @@ This guide demonstrates how to set up a simple e-commerce database in SQL Server
 
 1. make sure you are in the main branch by typ git checkout main
 2. then you can start merging the branches into the main by
-   - git merge manual/initial-schema
-   - git merge manual/add-categorie
-   - git merge manual/add-ratings
+
+```
+git merge manual/initial-schema
+git merge manual/add-categorie
+git merge manual/add-ratings
+```
+
 3. at the end your source control graph could look like that
 
    ![Image source control graph](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/SCG.png)
