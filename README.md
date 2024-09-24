@@ -68,33 +68,42 @@ git merge manual/add-ratings
 
 ## **Rollback Plan** :arrow_down:
 
-For the rollback you have to follow these steps based on how fra you want to rollback,
-run this sql command from this [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) you SQL Server Management
+1. **Download Rollback Script:**
 
-- if you want to remove the table ProductRatings than run only this code
+   - Download the [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) script from this repo
 
-```
-USE e_commerce;
-GO
+2. **Execute Specific Sections**:
 
--- removes the table productRatings
-DROP TABLE productRatings;
-```
+   - Open the script and execute the relevant section depending on how far you want to rollback:
+     if you want to remove the table ProductRatings than run only this code
 
-- if you want to remove the category tbl than you can run this code snipped
+   ```
+   USE e_commerce;
+   GO
 
-```
-USE e_commerce;
-GO
+   -- removes the table productRatings
+   DROP TABLE productRatings;
+   ```
 
--- removes the column categories from products
-ALTER TABLE products
-DROP CONSTRAINT fk_categoriesId;
+   - if you want to remove the category tbl than you can run this code snipped
 
-ALTER TABLE products
-DROP COLUMN categoriesId;
+   ```
+   USE e_commerce;
+   GO
 
-DROP TABLE category;
-```
+   -- removes the column categories from products
+   ALTER TABLE products
+   DROP CONSTRAINT fk_categoriesId;
 
-- if you want to make a fully rollback than you can run the whole script [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) you SQL Server Management
+   ALTER TABLE products
+   DROP COLUMN categoriesId;
+
+   DROP TABLE category;
+   ```
+
+   - if you want to make a fully rollback than you can run the whole script [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) you SQL Server Management
+
+3. **Important Note:**
+
+Always back up your database before making any changes. This rollback script is provided for illustration purposes,
+and you might need to adjust it based on your specific setup.
