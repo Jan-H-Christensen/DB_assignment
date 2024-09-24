@@ -77,14 +77,8 @@ run this sql command from this [Rollback script](https://github.com/Jan-H-Christ
 USE e_commerce;
 GO
 
--- removes the column categories from products
-ALTER TABLE products
-DROP CONSTRAINT fk_categoriesId;
-
-ALTER TABLE products
-DROP COLUMN categoriesId;
-
-DROP TABLE category;
+-- removes the table productRatings
+DROP TABLE productRatings;
 ```
 
 - if you want to remove the category in the product tbl than you have to remove the lines 13 & 14
@@ -93,8 +87,14 @@ DROP TABLE category;
 USE e_commerce;
 GO
 
--- removes the table productRatings
-DROP TABLE productRatings;
+-- removes the column categories from products
+ALTER TABLE products
+DROP CONSTRAINT fk_categoriesId;
+
+ALTER TABLE products
+DROP COLUMN categoriesId;
+
+DROP TABLE category;
 ```
 
 - if you want to make a fully rollback than you can run the whole script [Rollback script](https://github.com/Jan-H-Christensen/DB_assignment/blob/main/sql_rollback.sql) you SQL Server Management
